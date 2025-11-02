@@ -1,0 +1,17 @@
+/* You can add custom CSS here if needed, but most styling should be done with Tailwind classes in the HTML. */
+
+@keyframes progress-bar {
+    from { transform: scaleX(0); } 
+    to { transform: scaleX(1); }
+}
+.animate-progress {
+    transform-origin: left;
+    animation: progress-bar 5s linear;
+}
+@keyframes ken-burns {
+    0% { transform: scale(1.05) translate(1%, -1%); }
+    100% { transform: scale(1.05) translate(-1%, 1%); }
+}
+.ken-burns-image {
+    animation: ken-burns 10s ease-in-out infinite alternate;
+}
